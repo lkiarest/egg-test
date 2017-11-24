@@ -1,0 +1,23 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}登陆{% endblock %}
+{% block header %}
+  <link rel="stylesheet" type="text/css" href="./public/styles/login.css">
+{% endblock %}
+{% block body %}
+  <div id='login-form'>
+    <div>
+      <input type="text" v-model="username" placeholder='用户名' required>
+    </div>
+    <div>
+      <input type="password" v-model="pwd" placeholder='密码' required>
+    </div>
+    <div class='btn-panel'>
+      <button id='btn-login' @click='doLogin'>登陆</button>
+    </div>
+    <div id='err-msg' v-text='message'></div>
+  </div>
+{% endblock %}
+{% block footer %}
+  <script src='./public/script/login.js'></script>
+{% endblock %}

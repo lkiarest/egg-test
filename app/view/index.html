@@ -1,0 +1,14 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}首页{% endblock %}
+{% block header %}
+  <link rel="stylesheet" type="text/css" href="./public/styles/index.css">
+{% endblock %}
+{% block body %}
+  <div id='app'>
+    <button @click='logout'>注销</button>
+  </div>
+{% endblock %}
+{% block footer %}
+  <script src='./public/script/index.js'></script>
+{% endblock %}

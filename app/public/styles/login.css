@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+}
+
+#login-form {
+  width: 40%;
+  min-width: 320px;
+  max-width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+#login-form input {
+  width: 100%;
+  padding: 5px 0;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  text-indent: 10px;
+}
+
+#login-form .btn-panel {
+  width: 100%;
+  text-align: right;
+}
+
+#btn-login {
+  width: 80px;
+  line-height: 30px;
+  border: none;
+  background-color: #999;
+  color: #fff;
+}
+
+#err-msg {
+  height: 2.0rem;
+  margin-top: 20px;
+  color: #f00;
+  font-size: 14px;
+}
